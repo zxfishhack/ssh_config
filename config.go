@@ -576,6 +576,10 @@ func (k *KV) Pos() Position {
 	return k.position
 }
 
+func (k *KV) SetLeadingSpace(n int) {
+	k.leadingSpace = n
+}
+
 // String prints k as it was parsed in the config file. There may be slight
 // changes to the whitespace between values.
 func (k *KV) String() string {
